@@ -1,6 +1,6 @@
 using System.Windows.Controls;
 
-namespace PruebaParaEstudiar.Views;
+namespace MathRat.Views;
 
 public partial class Home : UserControl
 {

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaParaEstudiar", "PruebaParaEstudiar\PruebaParaEstudiar.csproj", "{C663DD0D-D044-47AB-9B6F-9A4CE2740EC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathRat", "MathRat\MathRat.csproj", "{C663DD0D-D044-47AB-9B6F-9A4CE2740EC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

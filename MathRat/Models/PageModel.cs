@@ -1,6 +1,6 @@
 using System;
 
-namespace PruebaParaEstudiar.Models;
+namespace MathRat.Models;
 
 public class PageModel
 {

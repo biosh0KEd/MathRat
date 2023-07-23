@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\efrai\\RiderProjects\\PruebaParaEstudiar\\PruebaParaEstudiar\\PruebaParaEstudiar.csproj",
-      "projectName": "PruebaParaEstudiar",
-      "projectPath": "C:\\Users\\efrai\\RiderProjects\\PruebaParaEstudiar\\PruebaParaEstudiar\\PruebaParaEstudiar.csproj",
+      "projectUniqueName": "C:\\Users\\efrai\\RiderProjects\\PruebaParaEstudiar\\MathRat\\MathRat.csproj",
+      "projectName": "MathRat",
+      "projectPath": "C:\\Users\\efrai\\RiderProjects\\PruebaParaEstudiar\\MathRat\\MathRat.csproj",
       "packagesPath": "C:\\Users\\efrai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\efrai\\RiderProjects\\PruebaParaEstudiar\\PruebaParaEstudiar\\obj\\",
+      "outputPath": "C:\\Users\\efrai\\RiderProjects\\PruebaParaEstudiar\\MathRat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
