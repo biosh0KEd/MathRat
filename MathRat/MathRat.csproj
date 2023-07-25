@@ -7,12 +7,4 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="Resources\Fonts\" />
-      <Folder Include="Resources\Images\" />
-      <Folder Include="Resources\Styles\" />
-      <Folder Include="Resources\Utilities\" />
-      <Folder Include="ViewModels\" />
-    </ItemGroup>
-
 </Project>

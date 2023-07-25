@@ -7,7 +7,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04c8de6c-bc86-4057-b627-d2797d40a5dc" name="Changes" comment="" />
+    <list default="true" id="04c8de6c-bc86-4057-b627-d2797d40a5dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MathRat/Resources/Utilities/RelayCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Resources/Utilities/ViewModelBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/ViewModels/CustomerViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/ViewModels/HomeViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/ViewModels/NavigationViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/ViewModels/OrderViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/ViewModels/ProductViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/ViewModels/SettingViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/ViewModels/ShipmentViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/ViewModels/TransactionViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Customers.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Customers.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Orders.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Orders.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Products.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Products.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Settings.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Settings.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Shipments.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Shipments.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Transactions.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MathRat/Views/Transactions.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PruebaParaEstudiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PruebaParaEstudiar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MathRat/MathRat.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MathRat/MathRat.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MathRat/obj/Debug/net7.0-windows/PruebaParaEstudiar_MarkupCompile.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MathRat/obj/Debug/net7.0-windows/PruebaParaEstudiar_MarkupCompile.lref" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +42,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MathRat/App.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MathRat/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MathRat/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MathRat/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MathRat/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MathRat/Models/PageModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MathRat/Views/Home.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MathRat/Views/Home.xaml.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2SwIqEZl2tyBB0larjA0yJrmfEj" />
   <component name="ProjectViewState">
@@ -72,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690051408177</updated>
       <workItem from="1690051417437" duration="1056000" />
-      <workItem from="1690138513157" duration="2310000" />
+      <workItem from="1690138513157" duration="4787000" />
     </task>
     <servers />
   </component>
