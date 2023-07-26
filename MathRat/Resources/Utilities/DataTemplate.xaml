@@ -3,30 +3,30 @@
                     xmlns:vm="clr-namespace:MathRat.ViewModels"
                     xmlns:view="clr-namespace:MathRat.Views">
     <DataTemplate DataType="{ x:Type vm:HomeViewModel }">
-        <view:Home/>
+        <view:Home />
     </DataTemplate>
-    
+
     <DataTemplate DataType="{ x:Type vm:CustomerViewModel }">
-        <view:Customers/>
+        <view:Customers />
     </DataTemplate>
-    
+
     <DataTemplate DataType="{ x:Type vm:ProductViewModel }">
-        <view:Products/>
+        <view:Products />
     </DataTemplate>
-    
+
     <DataTemplate DataType="{ x:Type vm:OrderViewModel }">
-        <view:Orders/>
+        <view:Orders />
     </DataTemplate>
-    
+
     <DataTemplate DataType="{ x:Type vm:TransactionViewModel }">
-        <view:Transactions/>
+        <view:Transactions />
     </DataTemplate>
-    
+
     <DataTemplate DataType="{ x:Type vm:ShipmentViewModel }">
-        <view:Shipments/>
+        <view:Shipments />
     </DataTemplate>
-    
+
     <DataTemplate DataType="{ x:Type vm:SettingViewModel }">
-        <view:Settings/>
+        <view:Settings />
     </DataTemplate>
 </ResourceDictionary>

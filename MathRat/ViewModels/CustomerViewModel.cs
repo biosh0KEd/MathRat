@@ -1,25 +1,25 @@
-using System.Printing;
 using MathRat.Models;
+using MathRat.Resources.Utilities;
 
 namespace MathRat.ViewModels;
 
-class CustomerViewModel : Resources.Utilities.ViewModelBase
+internal class CustomerViewModel : ViewModelBase
 {
     private readonly PageModel _pageModel;
-
-    public int CustomerID
-    {
-        get { return _pageModel.CustomerCount;}
-        set
-        {
-            _pageModel.CustomerCount = value; 
-            OnPropertyChanged();
-        }
-    }
 
     public CustomerViewModel()
     {
         _pageModel = new PageModel();
         CustomerID = 100528;
+    }
+
+    public int CustomerID
+    {
+        get => _pageModel.CustomerCount;
+        set
+        {
+            _pageModel.CustomerCount = value;
+            OnPropertyChanged();
+        }
     }
 }

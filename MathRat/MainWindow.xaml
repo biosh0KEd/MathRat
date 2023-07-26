@@ -6,130 +6,129 @@
         xmlns:vm="clr-namespace:MathRat.ViewModels"
         xmlns:menu="clr-namespace:MathRat.Resources.Utilities"
         mc:Ignorable="d"
-        Title="MainWindow" 
-        Height="600" 
+        Title="MainWindow"
+        Height="600"
         Width="850"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         Background="Transparent">
     <Window.DataContext>
-        <vm:NavigationViewModel/>
+        <vm:NavigationViewModel />
     </Window.DataContext>
-    
+
     <Grid>
         <!-- Window Border-->
         <Border Background="#212529"
-                CornerRadius="20"/>
+                CornerRadius="20" />
         <Grid>
             <!-- // Base Grid -->
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="228"/>
-                <ColumnDefinition Width="622"/>
+                <ColumnDefinition Width="228" />
+                <ColumnDefinition Width="622" />
             </Grid.ColumnDefinitions>
-            
+
             <!-- // Navigation Panel -->
-            
+
             <Grid HorizontalAlignment="Left"
                   Width="228">
                 <Border Background="#272B2F"
-                        CornerRadius="20, 0, 0, 20"/>
+                        CornerRadius="20, 0, 0, 20" />
                 <StackPanel Height="400"
                             Width="228">
-                    
+
                     <!-- // Home -->
                     <menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding HomeCommand}"
                               IsChecked="True">
                         <Grid>
-                            <Image Source="Resources/Images/icons8-home-96.png"
-                                   Style="{StaticResource Image_Style}"/>
-                            
+                            <Image Source="/Resources/Images/icons8-home-96.png"
+                                   Style="{StaticResource ImageStyle}" />
+
                             <TextBlock Text="Home"
-                                       Style="{StaticResource Text_Style}"/>
+                                       Style="{StaticResource TextStyle}" />
                         </Grid>
                     </menu:Btn>
-                    
+
                     <!-- // Customer -->
                     <menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding CustomerCommand}">
                         <Grid>
-                            <Image Source="Resources/Images/icons8-customer-96.png"
-                                   Style="{StaticResource Image_Style}"/>
-                            
+                            <Image Source="/Resources/Images/icons8-customer-96.png"
+                                   Style="{StaticResource ImageStyle}" />
+
                             <TextBlock Text="Customer"
-                                       Style="{StaticResource Text_Style}"/>
+                                       Style="{StaticResource TextStyle}" />
                         </Grid>
                     </menu:Btn>
-                    
+
                     <!-- // Products -->
                     <menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding ProductsCommand}">
                         <Grid>
-                            <Image Source="Resources/Images/icons8-products-96.png"
-                                   Style="{StaticResource Image_Style}"/>
-                            
+                            <Image Source="/Resources/Images/icons8-products-96.png"
+                                   Style="{StaticResource ImageStyle}" />
+
                             <TextBlock Text="Products"
-                                       Style="{StaticResource Text_Style}"/>
+                                       Style="{StaticResource TextStyle}" />
                         </Grid>
                     </menu:Btn>
-                    
+
                     <!-- // Orders -->
                     <menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding OrdersCommand}">
                         <Grid>
-                            <Image Source="Resources/Images/icons8-order-96.png"
-                                   Style="{StaticResource Image_Style}"/>
-                            
+                            <Image Source="/Resources/Images/icons8-order-96.png"
+                                   Style="{StaticResource ImageStyle}" />
+
                             <TextBlock Text="Orders"
-                                       Style="{StaticResource Text_Style}"/>
+                                       Style="{StaticResource TextStyle}" />
                         </Grid>
                     </menu:Btn>
-                    
+
                     <!-- // Transactions -->
                     <menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding TransactionsCommand}">
                         <Grid>
-                            <Image Source="Resources/Images/icons8-transaction-96.png"
-                                   Style="{StaticResource Image_Style}"/>
-                            
+                            <Image Source="/Resources/Images/icons8-transaction-96.png"
+                                   Style="{StaticResource ImageStyle}" />
+
                             <TextBlock Text="Transactions"
-                                       Style="{StaticResource Text_Style}"/>
+                                       Style="{StaticResource TextStyle}" />
                         </Grid>
                     </menu:Btn>
-                    
+
                     <!-- // Shipments -->
                     <menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding ShipmentsCommand}">
                         <Grid>
-                            <Image Source="Resources/Images/icons8-shipment-96.png"
-                                   Style="{StaticResource Image_Style}"/>
-                            
+                            <Image Source="/Resources/Images/icons8-shipment-96.png"
+                                   Style="{StaticResource ImageStyle}" />
+
                             <TextBlock Text="Shipments"
-                                       Style="{StaticResource Text_Style}"/>
+                                       Style="{StaticResource TextStyle}" />
                         </Grid>
                     </menu:Btn>
-                    
+
                     <!-- // Settings -->
                     <menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding SettingsCommand}">
                         <Grid>
-                            <Image Source="Resources/Images/icons8-settings-96.png"
-                                   Style="{StaticResource Image_Style}"/>
-                            
+                            <Image Source="/Resources/Images/icons8-settings-96.png"
+                                   Style="{ StaticResource ImageStyle }" />
+
                             <TextBlock Text="Settings"
-                                       Style="{StaticResource Text_Style}"/>
+                                       Style="{ StaticResource TextStyle }" />
                         </Grid>
                     </menu:Btn>
                 </StackPanel>
             </Grid>
             <Grid Grid.Column="1">
                 <ContentControl x:Name="Pages"
-                                Content="{Binding CurrentView}"/>
+                                Content="{ Binding CurrentView }"/>
             </Grid>
         </Grid>
-        
-        <Button x:Name="CloseApp" 
-                />
+
+        <!-- <Button x:Name="CloseApp" /> -->
     </Grid>
 </Window>

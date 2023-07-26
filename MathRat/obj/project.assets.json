@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\efrai\\RiderProjects\\PruebaParaEstudiar\\MathRat\\MathRat.csproj",
+      "projectUniqueName": "C:\\Users\\efrai\\RiderProjects\\MathRat\\MathRat\\MathRat.csproj",
       "projectName": "MathRat",
-      "projectPath": "C:\\Users\\efrai\\RiderProjects\\PruebaParaEstudiar\\MathRat\\MathRat.csproj",
+      "projectPath": "C:\\Users\\efrai\\RiderProjects\\MathRat\\MathRat\\MathRat.csproj",
       "packagesPath": "C:\\Users\\efrai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\efrai\\RiderProjects\\PruebaParaEstudiar\\MathRat\\obj\\",
+      "outputPath": "C:\\Users\\efrai\\RiderProjects\\MathRat\\MathRat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
@@ -39,6 +39,7 @@
         "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/ZlHW2dAAVRcmvA4hDL8gkFClrRnXKGBib8wjE7U7b5i5kYNMGo/api": {},
         "https://nuget.devexpress.com/kfoNlyISBfYEDiPYcqtsawTMJZiNnl4j6rRTBV3OJDFX9mApgk/api": {}
       },
       "frameworks": {

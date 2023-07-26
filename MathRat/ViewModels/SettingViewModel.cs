@@ -1,20 +1,25 @@
-using System.Windows.Controls;
 using MathRat.Models;
+using MathRat.Resources.Utilities;
+
 namespace MathRat.ViewModels;
 
-public class SettingViewModel : Resources.Utilities.ViewModelBase
+public class SettingViewModel : ViewModelBase
 {
     private readonly PageModel _pageModel;
 
-    public bool Settings
-    {
-        get { return _pageModel.LocationStatus; }
-        set { _pageModel.LocationStatus = value; OnPropertyChanged(); }
-    }
-    
     public SettingViewModel()
     {
         _pageModel = new PageModel();
         Settings = true;
+    }
+
+    public bool Settings
+    {
+        get => _pageModel.LocationStatus;
+        set
+        {
+            _pageModel.LocationStatus = value;
+            OnPropertyChanged();
+        }
     }
 }

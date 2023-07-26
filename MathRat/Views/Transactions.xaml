@@ -5,19 +5,19 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:MathRat.ViewModels"
              mc:Ignorable="d"
-             d:DesignHeight="600" 
+             d:DesignHeight="600"
              d:DesignWidth="622"
-             Style="{ StaticResource Page_Style }">
+             Style="{ StaticResource PageStyle }">
     <UserControl.DataContext>
         <vm:TransactionViewModel />
     </UserControl.DataContext>
     <Grid>
         <Border CornerRadius="0, 20, 20, 0">
             <Border.Background>
-                <SolidColorBrush Color="#262930"/>
+                <SolidColorBrush Color="#262930" />
             </Border.Background>
         </Border>
-        
+
         <Grid>
             <TextBlock Text="Payment Amount :"
                        Foreground="#DBDBDB"
@@ -25,16 +25,16 @@
                        HorizontalAlignment="Right"
                        VerticalAlignment="Top"
                        FontFamily="/Resources/Fonts/#Rubik Medium"
-                       Margin="0, 315, 160, 0"/>
-        
+                       Margin="0, 315, 160, 0" />
+
             <TextBlock Text="{Binding TransactionAmount, StringFormat='{}{0:C}'}"
                        Foreground="#CED565"
                        FontSize="12"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Top"
                        FontFamily="/Resources/Fonts/#Rubik Medium"
-                       Margin="0, 315, 98, 0"/>
+                       Margin="0, 315, 98, 0" />
         </Grid>
-        
+
     </Grid>
 </UserControl>

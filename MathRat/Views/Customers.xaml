@@ -5,34 +5,34 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:MathRat.ViewModels"
              mc:Ignorable="d"
-             d:DesignHeight="600" 
+             d:DesignHeight="600"
              d:DesignWidth="622"
-             Style="{ StaticResource Page_style }">
+             Style="{ StaticResource PageStyle }">
     <UserControl.DataContext>
         <vm:CustomerViewModel />
     </UserControl.DataContext>
-    
+
     <Grid>
         <Border CornerRadius="0, 20, 20, 0">
             <Border.Background>
-                <SolidColorBrush Color="#262930"/>
+                <SolidColorBrush Color="#262930" />
             </Border.Background>
         </Border>
-        
+
         <TextBlock Text="Customer ID :"
                    Foreground="#DBDBDB"
                    FontSize="12"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    FontFamily="/Resources/Fonts/#Rubik Medium"
-                   Margin="80, 154, 0, 0"/>
+                   Margin="80, 154, 0, 0" />
         <TextBlock Text="{Binding CustomerID}"
                    Foreground="#CED565"
                    FontSize="12"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    FontFamily="/Resources/Fonts/#Rubik Medium"
-                   Margin="175, 154, 0, 0"/>
-        
+                   Margin="175, 154, 0, 0" />
+
     </Grid>
 </UserControl>

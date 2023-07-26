@@ -7,4 +7,21 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Resources\Images\icons8-home-96.png" />
+      <Resource Include="Resources\Images\icons8-home-96.png" />
+      <None Remove="Resources\Images\icons8-order-96.png" />
+      <Resource Include="Resources\Images\icons8-order-96.png" />
+      <None Remove="Resources\Images\icons8-products-96.png" />
+      <Resource Include="Resources\Images\icons8-products-96.png" />
+      <None Remove="Resources\Images\icons8-customer-96.png" />
+      <Resource Include="Resources\Images\icons8-customer-96.png" />
+      <None Remove="Resources\Images\icons8-settings-96.png" />
+      <Resource Include="Resources\Images\icons8-settings-96.png" />
+      <None Remove="Resources\Images\icons8-shipment-96.png" />
+      <Resource Include="Resources\Images\icons8-shipment-96.png" />
+      <None Remove="Resources\Images\icons8-transaction-96.png" />
+      <Resource Include="Resources\Images\icons8-transaction-96.png" />
+    </ItemGroup>
+
 </Project>

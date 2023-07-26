@@ -5,26 +5,26 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:MathRat.ViewModels"
              mc:Ignorable="d"
-             d:DesignHeight="600" 
+             d:DesignHeight="600"
              d:DesignWidth="622"
-             Style="{ StaticResource Page_Style }">
+             Style="{ StaticResource PageStyle }">
     <UserControl.DataContext>
         <vm:ProductViewModel />
     </UserControl.DataContext>
     <Grid>
         <Border CornerRadius="0, 20, 20, 0">
             <Border.Background>
-                <SolidColorBrush Color="#262930"/>
+                <SolidColorBrush Color="#262930" />
             </Border.Background>
         </Border>
-        
+
         <TextBlock Text="{Binding ProductAvailability}"
                    Foreground="#F25E68"
                    FontSize="12"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Center"
                    FontFamily="/Resources/Fonts/#Rubik Medium"
-                   Margin="276, 300, 0, 0"/>
+                   Margin="276, 300, 0, 0" />
 
     </Grid>
 </UserControl>
