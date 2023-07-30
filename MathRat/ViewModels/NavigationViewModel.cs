@@ -6,8 +6,6 @@ namespace MathRat.ViewModels;
 
 public class NavigationViewModel : ViewModelBase
 {
-    private object _currentView;
-
     public NavigationViewModel()
     {
         HomeCommand = new RelayCommand(Home);
@@ -22,6 +20,7 @@ public class NavigationViewModel : ViewModelBase
         CurrentView = new Home();
     }
 
+    private object _currentView;
     public object CurrentView
     {
         get => _currentView;
