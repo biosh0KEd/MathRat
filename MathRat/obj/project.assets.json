@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\efrai\\RiderProjects\\MathRat\\MathRat\\MathRat.csproj",
+      "projectUniqueName": "C:\\Users\\efrai\\source\\repos\\GitProjects\\MathRat\\MathRat\\MathRat.csproj",
       "projectName": "MathRat",
-      "projectPath": "C:\\Users\\efrai\\RiderProjects\\MathRat\\MathRat\\MathRat.csproj",
+      "projectPath": "C:\\Users\\efrai\\source\\repos\\GitProjects\\MathRat\\MathRat\\MathRat.csproj",
       "packagesPath": "C:\\Users\\efrai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\efrai\\RiderProjects\\MathRat\\MathRat\\obj\\",
+      "outputPath": "C:\\Users\\efrai\\source\\repos\\GitProjects\\MathRat\\MathRat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
