@@ -5,6 +5,7 @@
         <TargetFramework>net7.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,5 +24,6 @@
       <None Remove="Resources\Images\icons8-transaction-96.png" />
       <Resource Include="Resources\Images\icons8-transaction-96.png" />
     </ItemGroup>
+
 
 </Project>

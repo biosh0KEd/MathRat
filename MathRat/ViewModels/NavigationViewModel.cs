@@ -1,4 +1,7 @@
+using System.Collections.Generic;
+using System.Windows.Controls;
 using System.Windows.Input;
+using MathRat.Models.General;
 using MathRat.Resources.Utilities;
 using MathRat.Views;
 
@@ -6,6 +9,17 @@ namespace MathRat.ViewModels;
 
 public class NavigationViewModel : ViewModelBase
 {
+    private List<TreeViewItem> _navLinks;
+    public List<TreeViewItem> NavLinks
+    {
+        get => _navLinks;
+        set
+        {
+            _navLinks = value;
+            OnPropertyChanged();
+        }
+    }
+    
     public NavigationViewModel()
     {
         HomeCommand = new RelayCommand(Home);
