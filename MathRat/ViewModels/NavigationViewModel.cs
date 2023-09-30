@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows.Controls;
 using System.Windows.Input;
 using MathRat.Models.General;
@@ -9,8 +10,8 @@ namespace MathRat.ViewModels;
 
 public class NavigationViewModel : ViewModelBase
 {
-    private List<TreeViewItem> _navLinks;
-    public List<TreeViewItem> NavLinks
+    private List<NavLink> _navLinks;
+    public List<NavLink> NavLinks
     {
         get => _navLinks;
         set
@@ -32,6 +33,87 @@ public class NavigationViewModel : ViewModelBase
 
         // Startup Page
         CurrentView = new Home();
+        
+        NavLinks = new List<NavLink>
+        {
+            new ()
+            {
+                Title = "Home",
+                //IsSelected = true,
+                //Command = HomeCommand
+            },
+            new ()
+            {
+                Title = "Customers",
+                //Command = CustomerCommand
+            },
+            new ()
+            {
+                Title = "Products",
+                //Command = ProductsCommand
+            },
+            new ()
+            {
+                Title = "Orders",
+                Items =  new ObservableCollection<NavLink>()
+                {
+                    new ()
+                    {
+                        Title = "Home",
+                        //IsSelected = true,
+                        //Command = HomeCommand
+                    },
+                    new ()
+                    {
+                        Title = "Customers",
+                        //Command = CustomerCommand
+                    },
+                    new ()
+                    {
+                        Title = "Products",
+                        //Command = ProductsCommand
+                    },
+                    new ()
+                    {
+                        Title = "Orders",
+                        //CommandBindings = { new CommandBinding(OrdersCommand) }
+                        //Command = OrdersCommand
+                    },
+                    new ()
+                    {
+                        Title = "Transactions",
+                        //Command = TransactionsCommand
+                    },
+                    new ()
+                    {
+                        Title = "Shipments",
+                        //Command = ShipmentsCommand
+                    },
+                    new()
+                    {
+                        Title = "Settings",
+                        //Command = SettingsCommand
+                    }
+                }
+                //CommandBindings = { new CommandBinding(OrdersCommand) }
+                //Command = OrdersCommand
+            },
+            new ()
+            {
+                Title = "Transactions",
+                //Command = TransactionsCommand
+            },
+            new ()
+            {
+                Title = "Shipments",
+                //Command = ShipmentsCommand
+            },
+            new()
+            {
+                Title = "Settings",
+                //Command = SettingsCommand
+            }
+        };
     }
 
     private object _currentView;

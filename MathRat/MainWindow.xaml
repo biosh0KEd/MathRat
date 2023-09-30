@@ -16,7 +16,12 @@
     <Window.DataContext>
         <vm:NavigationViewModel />
     </Window.DataContext>
-
+    
+    <Window.Resources>
+        <ResourceDictionary Source="Resources/Utilities/MainWindowResources.xaml"/>
+    </Window.Resources>
+    
+    
     <Grid>
         <!-- Window Border-->
         <Border Background="#212529"
@@ -122,29 +127,34 @@
                         </Grid>
                     </menu:Btn>
                 </StackPanel>
-                <TreeView Name="myTreeViewEvent">
-                    <TreeViewItem Header="Employee1" IsSelected="True" >
-                        <TreeViewItem Header="Jesper Aaberg"/>
-                        <TreeViewItem Header="Employee Number">
-                            <TreeViewItem Header="12345"/>
-                        </TreeViewItem>
-                        <TreeViewItem Header="Work Days">
-                            <TreeViewItem Header="Monday"/>
-                            <TreeViewItem Header="Tuesday"/>
-                            <TreeViewItem Header="Thursday"/>
-                        </TreeViewItem>
-                    </TreeViewItem>
-                    <TreeViewItem Header="Employee2">
-                        <TreeViewItem Header="Dominik Paiha"/>
-                        <TreeViewItem Header="Employee Number">
-                            <TreeViewItem Header="98765"/>
-                        </TreeViewItem>
-                        <TreeViewItem Header="Work Days">
-                            <TreeViewItem Header="Tuesday"/>
-                            <TreeViewItem Header="Wednesday"/>
-                            <TreeViewItem Header="Friday"/>
-                        </TreeViewItem>
-                    </TreeViewItem>
+                <TreeView Name="NavLinks"
+                          ItemsSource="{ Binding NavLinks }"
+                          ItemTemplate="{ StaticResource NavLinkTemplate }">
+                    <!-- <TreeView.ItemTemplate> -->
+                    <!--     <StaticResourceExtension ResourceKey="NavLinkTemplate" /> -->
+                    <!-- </TreeView.ItemTemplate> -->
+                    <!-- <TreeViewItem Header="Employee1" IsSelected="True" > -->
+                    <!--     <TreeViewItem Header="Jesper Aaberg"/> -->
+                    <!--     <TreeViewItem Header="Employee Number"> -->
+                    <!--         <TreeViewItem Header="12345"/> -->
+                    <!--     </TreeViewItem> -->
+                    <!--     <TreeViewItem Header="Work Days"> -->
+                    <!--         <TreeViewItem Header="Monday"/> -->
+                    <!--         <TreeViewItem Header="Tuesday"/> -->
+                    <!--         <TreeViewItem Header="Thursday"/> -->
+                    <!--     </TreeViewItem> -->
+                    <!-- </TreeViewItem> -->
+                    <!-- <TreeViewItem Header="Employee2"> -->
+                    <!--     <TreeViewItem Header="Dominik Paiha"/> -->
+                    <!--     <TreeViewItem Header="Employee Number"> -->
+                    <!--         <TreeViewItem Header="98765"/> -->
+                    <!--     </TreeViewItem> -->
+                    <!--     <TreeViewItem Header="Work Days"> -->
+                    <!--         <TreeViewItem Header="Tuesday"/> -->
+                    <!--         <TreeViewItem Header="Wednesday"/> -->
+                    <!--         <TreeViewItem Header="Friday"/> -->
+                    <!--     </TreeViewItem> -->
+                    <!-- </TreeViewItem> -->
                 </TreeView>
             </Grid>
             <Grid Grid.Column="1">
