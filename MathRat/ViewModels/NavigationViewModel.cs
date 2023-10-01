@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using MathRat.Models.General;
@@ -21,6 +22,27 @@ public class NavigationViewModel : ViewModelBase
         }
     }
     
+    private object _currentView;
+    public object CurrentView
+    {
+        get => _currentView;
+        set
+        {
+            _currentView = value;
+            OnPropertyChanged();
+        }
+    }
+
+    public ICommand HomeCommand { get; set; }
+    public ICommand CustomerCommand { get; set; }
+    public ICommand ProductsCommand { get; set; }
+    public ICommand OrdersCommand { get; set; }
+    public ICommand TransactionsCommand { get; set; }
+    public ICommand ShipmentsCommand { get; set; }
+    public ICommand SettingsCommand { get; set; }
+    public ICommand CloseWindowCommand { get; set; }
+    public ICommand MinimizeWindowCommand { get; set; }
+    
     public NavigationViewModel()
     {
         HomeCommand = new RelayCommand(Home);
@@ -30,7 +52,9 @@ public class NavigationViewModel : ViewModelBase
         TransactionsCommand = new RelayCommand(Transactions);
         ShipmentsCommand = new RelayCommand(Shipments);
         SettingsCommand = new RelayCommand(Settings);
-
+        CloseWindowCommand = new RelayCommand(CloseWindow);
+        MinimizeWindowCommand = new RelayCommand(MinimizeWindow);
+        
         // Startup Page
         CurrentView = new Home();
         
@@ -116,24 +140,6 @@ public class NavigationViewModel : ViewModelBase
         };
     }
 
-    private object _currentView;
-    public object CurrentView
-    {
-        get => _currentView;
-        set
-        {
-            _currentView = value;
-            OnPropertyChanged();
-        }
-    }
-
-    public ICommand HomeCommand { get; set; }
-    public ICommand CustomerCommand { get; set; }
-    public ICommand ProductsCommand { get; set; }
-    public ICommand OrdersCommand { get; set; }
-    public ICommand TransactionsCommand { get; set; }
-    public ICommand ShipmentsCommand { get; set; }
-    public ICommand SettingsCommand { get; set; }
 
     public void Home(object obj)
     {
@@ -168,5 +174,15 @@ public class NavigationViewModel : ViewModelBase
     public void Settings(object obj)
     {
         CurrentView = new Settings();
+    }
+    
+    public void CloseWindow(object obj)
+    {
+        Application.Current.Shutdown();
+    }
+    
+    public void MinimizeWindow(object obj)
+    {
+        if (Application.Current.MainWindow != null) Application.Current.MainWindow.WindowState = WindowState.Minimized;
     }
 }

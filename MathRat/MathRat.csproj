@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
         <LangVersion>default</LangVersion>
+        <ApplicationIcon>Resources\Images\icons8-math-70.ico</ApplicationIcon>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,6 +24,13 @@
       <Resource Include="Resources\Images\icons8-shipment-96.png" />
       <None Remove="Resources\Images\icons8-transaction-96.png" />
       <Resource Include="Resources\Images\icons8-transaction-96.png" />
+      <None Remove="Resources\Images\icons8-close-window-96.png" />
+      <Resource Include="Resources\Images\icons8-close-window-96.png" />
+      <None Remove="Resources\Images\icons8-math-64.png" />
+      <None Remove="Resources\Images\icons8-math-70.ico" />
+      <Resource Include="Resources\Images\icons8-math-70.ico" />
+      <None Remove="Resources\Images\icons8-minimize-96.png" />
+      <Resource Include="Resources\Images\icons8-minimize-96.png" />
     </ItemGroup>
 
 

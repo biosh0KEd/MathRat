@@ -35,135 +35,125 @@
 
             <!-- // Navigation Panel -->
 
-            <Grid HorizontalAlignment="Left"
-                  Width="228">
-                <Border Background="#272B2F"
-                        CornerRadius="20, 0, 0, 20" />
-                <StackPanel Height="400"
-                            Width="228">
-
-                    <!-- // Home -->
-                    <menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding HomeCommand}"
-                              IsChecked="True">
-                        <Grid>
-                            <Image Source="/Resources/Images/icons8-home-96.png"
-                                   Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Home"
-                                       Style="{StaticResource TextStyle}" />
-                        </Grid>
-                    </menu:Btn>
-
-                    <!-- // Customer -->
-                    <menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding CustomerCommand}">
-                        <Grid>
-                            <Image Source="/Resources/Images/icons8-customer-96.png"
-                                   Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Customer"
-                                       Style="{StaticResource TextStyle}" />
-                        </Grid>
-                    </menu:Btn>
-
-                    <!-- // Products -->
-                    <menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding ProductsCommand}">
-                        <Grid>
-                            <Image Source="/Resources/Images/icons8-products-96.png"
-                                   Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Products"
-                                       Style="{StaticResource TextStyle}" />
-                        </Grid>
-                    </menu:Btn>
-
-                    <!-- // Orders -->
-                    <menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding OrdersCommand}">
-                        <Grid>
-                            <Image Source="/Resources/Images/icons8-order-96.png"
-                                   Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Orders"
-                                       Style="{StaticResource TextStyle}" />
-                        </Grid>
-                    </menu:Btn>
-
-                    <!-- // Transactions -->
-                    <menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding TransactionsCommand}">
-                        <Grid>
-                            <Image Source="/Resources/Images/icons8-transaction-96.png"
-                                   Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Transactions"
-                                       Style="{StaticResource TextStyle}" />
-                        </Grid>
-                    </menu:Btn>
-
-                    <!-- // Shipments -->
-                    <menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding ShipmentsCommand}">
-                        <Grid>
-                            <Image Source="/Resources/Images/icons8-shipment-96.png"
-                                   Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Shipments"
-                                       Style="{StaticResource TextStyle}" />
-                        </Grid>
-                    </menu:Btn>
-
-                    <!-- // Settings -->
-                    <menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding SettingsCommand}">
-                        <Grid>
-                            <Image Source="/Resources/Images/icons8-settings-96.png"
-                                   Style="{ StaticResource ImageStyle }" />
-
-                            <TextBlock Text="Settings"
-                                       Style="{ StaticResource TextStyle }" />
-                        </Grid>
-                    </menu:Btn>
-                </StackPanel>
-                <TreeView Name="NavLinks"
-                          ItemsSource="{ Binding NavLinks }"
-                          ItemTemplate="{ StaticResource NavLinkTemplate }">
-                    <!-- <TreeView.ItemTemplate> -->
-                    <!--     <StaticResourceExtension ResourceKey="NavLinkTemplate" /> -->
-                    <!-- </TreeView.ItemTemplate> -->
-                    <!-- <TreeViewItem Header="Employee1" IsSelected="True" > -->
-                    <!--     <TreeViewItem Header="Jesper Aaberg"/> -->
-                    <!--     <TreeViewItem Header="Employee Number"> -->
-                    <!--         <TreeViewItem Header="12345"/> -->
-                    <!--     </TreeViewItem> -->
-                    <!--     <TreeViewItem Header="Work Days"> -->
-                    <!--         <TreeViewItem Header="Monday"/> -->
-                    <!--         <TreeViewItem Header="Tuesday"/> -->
-                    <!--         <TreeViewItem Header="Thursday"/> -->
-                    <!--     </TreeViewItem> -->
-                    <!-- </TreeViewItem> -->
-                    <!-- <TreeViewItem Header="Employee2"> -->
-                    <!--     <TreeViewItem Header="Dominik Paiha"/> -->
-                    <!--     <TreeViewItem Header="Employee Number"> -->
-                    <!--         <TreeViewItem Header="98765"/> -->
-                    <!--     </TreeViewItem> -->
-                    <!--     <TreeViewItem Header="Work Days"> -->
-                    <!--         <TreeViewItem Header="Tuesday"/> -->
-                    <!--         <TreeViewItem Header="Wednesday"/> -->
-                    <!--         <TreeViewItem Header="Friday"/> -->
-                    <!--     </TreeViewItem> -->
-                    <!-- </TreeViewItem> -->
-                </TreeView>
-            </Grid>
+            <!-- <Grid HorizontalAlignment="Left" -->
+            <!--       Width="228"> -->
+            <!--     <Border Background="#272B2F" -->
+            <!--             CornerRadius="20, 0, 0, 20" /> -->
+            <!--     <StackPanel Height="400" -->
+            <!--                 Width="228"> -->
+            <!-- -->
+            <!--         ~1~ // Home @1@ -->
+            <!--         <menu:Btn Style="{StaticResource BtnStyle}" -->
+            <!--                   Command="{Binding HomeCommand}" -->
+            <!--                   IsChecked="True"> -->
+            <!--             <Grid> -->
+            <!--                 <Image Source="/Resources/Images/icons8-home-96.png" -->
+            <!--                        Style="{StaticResource ImageStyle}" /> -->
+            <!-- -->
+            <!--                 <TextBlock Text="Home" -->
+            <!--                            Style="{StaticResource TextStyle}" /> -->
+            <!--             </Grid> -->
+            <!--         </menu:Btn> -->
+            <!-- -->
+            <!--         ~1~ // Customer @1@ -->
+            <!--         <menu:Btn Style="{StaticResource BtnStyle}" -->
+            <!--                   Command="{Binding CustomerCommand}"> -->
+            <!--             <Grid> -->
+            <!--                 <Image Source="/Resources/Images/icons8-customer-96.png" -->
+            <!--                        Style="{StaticResource ImageStyle}" /> -->
+            <!-- -->
+            <!--                 <TextBlock Text="Customer" -->
+            <!--                            Style="{StaticResource TextStyle}" /> -->
+            <!--             </Grid> -->
+            <!--         </menu:Btn> -->
+            <!-- -->
+            <!--         ~1~ // Products @1@ -->
+            <!--         <menu:Btn Style="{StaticResource BtnStyle}" -->
+            <!--                   Command="{Binding ProductsCommand}"> -->
+            <!--             <Grid> -->
+            <!--                 <Image Source="/Resources/Images/icons8-products-96.png" -->
+            <!--                        Style="{StaticResource ImageStyle}" /> -->
+            <!-- -->
+            <!--                 <TextBlock Text="Products" -->
+            <!--                            Style="{StaticResource TextStyle}" /> -->
+            <!--             </Grid> -->
+            <!--         </menu:Btn> -->
+            <!-- -->
+            <!--         ~1~ // Orders @1@ -->
+            <!--         <menu:Btn Style="{StaticResource BtnStyle}" -->
+            <!--                   Command="{Binding OrdersCommand}"> -->
+            <!--             <Grid> -->
+            <!--                 <Image Source="/Resources/Images/icons8-order-96.png" -->
+            <!--                        Style="{StaticResource ImageStyle}" /> -->
+            <!-- -->
+            <!--                 <TextBlock Text="Orders" -->
+            <!--                            Style="{StaticResource TextStyle}" /> -->
+            <!--             </Grid> -->
+            <!--         </menu:Btn> -->
+            <!-- -->
+            <!--         ~1~ // Transactions @1@ -->
+            <!--         <menu:Btn Style="{StaticResource BtnStyle}" -->
+            <!--                   Command="{Binding TransactionsCommand}"> -->
+            <!--             <Grid> -->
+            <!--                 <Image Source="/Resources/Images/icons8-transaction-96.png" -->
+            <!--                        Style="{StaticResource ImageStyle}" /> -->
+            <!-- -->
+            <!--                 <TextBlock Text="Transactions" -->
+            <!--                            Style="{StaticResource TextStyle}" /> -->
+            <!--             </Grid> -->
+            <!--         </menu:Btn> -->
+            <!-- -->
+            <!--         ~1~ // Shipments @1@ -->
+            <!--         <menu:Btn Style="{StaticResource BtnStyle}" -->
+            <!--                   Command="{Binding ShipmentsCommand}"> -->
+            <!--             <Grid> -->
+            <!--                 <Image Source="/Resources/Images/icons8-shipment-96.png" -->
+            <!--                        Style="{StaticResource ImageStyle}" /> -->
+            <!-- -->
+            <!--                 <TextBlock Text="Shipments" -->
+            <!--                            Style="{StaticResource TextStyle}" /> -->
+            <!--             </Grid> -->
+            <!--         </menu:Btn> -->
+            <!-- -->
+            <!--         ~1~ // Settings @1@ -->
+            <!--         <menu:Btn Style="{StaticResource BtnStyle}" -->
+            <!--                   Command="{Binding SettingsCommand}"> -->
+            <!--             <Grid> -->
+            <!--                 <Image Source="/Resources/Images/icons8-settings-96.png" -->
+            <!--                        Style="{ StaticResource ImageStyle }" /> -->
+            <!-- -->
+            <!--                 <TextBlock Text="Settings" -->
+            <!--                            Style="{ StaticResource TextStyle }" /> -->
+            <!--             </Grid> -->
+            <!--         </menu:Btn> -->
+            <!--     </StackPanel> -->
+            <!-- </Grid> -->
+            <TreeView Name="NavLinks" HorizontalAlignment="Left" Width="Auto"
+                      ItemsSource="{ Binding NavLinks }"
+                      ItemTemplate="{ StaticResource NavLinkTemplate }"
+                      Background="Transparent"
+                      Margin="10,0,0,0">
+            </TreeView>
             <Grid Grid.Column="1">
                 <ContentControl x:Name="Pages"
                                 Content="{ Binding CurrentView }"/>
+                
+                <StackPanel Style="{ StaticResource WindowActionButtons }">
+                    <Button x:Name="MinimizeApp" 
+                              Style="{ StaticResource WindowActionButton }"
+                              Command="{ Binding MinimizeWindowCommand }">
+                        <Image Source="/Resources/Images/icons8-minimize-96.png"
+                               Style="{ StaticResource WindowActionIcon}"/>
+                    </Button>
+                    
+                    <Button x:Name="CloseApp" 
+                            Style="{ StaticResource WindowActionButton }"
+                            Command="{ Binding CloseWindowCommand }">
+                        <Image Source="/Resources/Images/icons8-close-window-96.png"
+                               Style="{ StaticResource WindowActionIcon}"/>
+                    </Button>
+                </StackPanel>
             </Grid>
         </Grid>
-
-        
-        <!-- <Button x:Name="CloseApp" /> -->
     </Grid>
 </Window>
