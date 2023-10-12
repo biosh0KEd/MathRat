@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:MathRat.ViewModels"
-        xmlns:menu="clr-namespace:MathRat.Resources.Utilities"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="600"
@@ -18,7 +17,12 @@
     </Window.DataContext>
     
     <Window.Resources>
-        <ResourceDictionary Source="Resources/Utilities/MainWindowResources.xaml"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Utilities/MainWindowResources.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/WindowActionButton.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     
     
