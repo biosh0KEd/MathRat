@@ -31,7 +31,7 @@
                                                     Storyboard.TargetProperty="Color"
                                                     From="#272B2F"
                                                     To="#3E434A"
-                                                    Duration="0:0:0.3" />
+                                                    Duration="0:0:0.1" />
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger>
@@ -44,7 +44,7 @@
                                                     Storyboard.TargetProperty="Color"
                                                     From="#3E434A"
                                                     To="#272B2F"
-                                                    Duration="0:0:0.3" />
+                                                    Duration="0:0:0.1" />
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger>
@@ -53,4 +53,11 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    <Style x:Key="WindowActionIcon" TargetType="Image">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>
+    </Style>     
 </ResourceDictionary>

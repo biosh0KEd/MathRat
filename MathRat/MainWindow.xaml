@@ -21,6 +21,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Utilities/MainWindowResources.xaml"/>
                 <ResourceDictionary Source="Resources/Styles/WindowActionButton.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/NavLink.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -136,7 +137,8 @@
                       ItemsSource="{ Binding NavLinks }"
                       ItemTemplate="{ StaticResource NavLinkTemplate }"
                       Background="Transparent"
-                      Margin="10,0,0,0">
+                      Margin="10,0,0,0"
+                      ItemContainerStyle="{ StaticResource CustomTreeItemStyle }">
             </TreeView>
             <Grid Grid.Column="1">
                 <ContentControl x:Name="Pages"
